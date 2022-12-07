@@ -65,7 +65,7 @@ const ContactForm = (props) => {
 
   // goes on form html onSubmit={handleSubmit}
   return (
-    <form name="PortfolioContact" onSubmit={handleSubmit} id="contactForm" netlify>
+    <form onSubmit={handleSubmit} id="contactForm">
       <input type="hidden" name="form-name" value="PortfolioContact" />
       <div className="containInput">
         <div className="formLabel" htmlFor="name">Name:</div>
