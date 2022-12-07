@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from 'react'; 
+import React from 'react'; 
 import Header from './components/header/header.jsx'
 import Nav from './components/nav/nav.jsx'
 import Portfolio from './components/portfolio/portfolio.jsx'
@@ -9,7 +9,10 @@ import gsap from "gsap";
 
 
 // list to do
-// contact form
+// mobile
+// domain name
+// links to live page
+// use their form thing
 // size of main comp
 
 export default class App extends React.Component {
@@ -138,6 +141,11 @@ export default class App extends React.Component {
     const flip3 = this.state.flip3;
     const fontColor = this.state.fontColor
 
+    const startOff = {
+      transform: "translate(0px, 2000px)",
+      opacity: "0"
+    }
+
     return (
       <div className="allContain">
         <div className={`inky${shape} bigInky`}>
@@ -158,13 +166,13 @@ export default class App extends React.Component {
                 
               </div>
 
-              <div id="sideB" className={`shape tready card__face ${flip2} ${shape} ${fontColor}`}>
+              <div id="sideB" className={`shape tready card__face ${flip2} ${shape} ${fontColor}`} style={startOff}>
                 <div className={`inky${shape}`}>
                 </div>
                   <Portfolio shape={shape}/>
                 
               </div>
-              <div id="sideC" className={`shape tready card__face ${flip3} ${shape} ${fontColor}`}>
+              <div id="sideC" className={`shape tready card__face ${flip3} ${shape} ${fontColor}`} style={startOff}>
                 <div className={`inky${shape}`}>
                 </div>
                   <Contact shape={shape} fontColor={fontColor}/>

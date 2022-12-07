@@ -7,6 +7,7 @@ export default class ChangeColorText extends React.Component {
 
   constructor(props){
     super(props);
+    console.log("a");
   }
 
   state = {

@@ -26,10 +26,10 @@ const ContactForm = (props) => {
     display: state.messageSent === true ? "none" : "inline"
   }
 
-  const [status, setStatus] = useState("Submit");
+  //const [status, setStatus] = useState("Submit");
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus("Sending...");
+    //setStatus("Sending...");
     setState({ messageSent: true });
     const { name, email, message } = e.target.elements;
     let details = {
@@ -44,8 +44,8 @@ const ContactForm = (props) => {
       },
       body: JSON.stringify(details),
     });
-    setStatus("Submit");
-    let result = await response.json();
+    //setStatus("Submit");
+    await response.json();
   };
   return (
     <form onSubmit={handleSubmit} >

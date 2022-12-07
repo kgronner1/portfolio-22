@@ -1,9 +1,6 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './portfolio.css'
 import ReactPlayer from 'react-player'
-import PortfolioItem from './portfolioItem.jsx'
-import PortfolioIntro from './portfolioIntro.jsx'
-import { render } from '@testing-library/react'
 import { BsFillArrowLeftCircleFill, BsFillArrowLeftSquareFill  } from 'react-icons/bs'
 //import portfolioData from '../assets/portfolio_data.json';
 
@@ -44,10 +41,6 @@ const Portfolio = (props) => {
     console.log("x set here", a);
     //xsetPortObj(a);
     setState({ portObj: a });
-  }
-  
-  function backToList() {
-    setState({ portID: 0 });
   }
 
   function portIntro() {
