@@ -27,27 +27,28 @@ const ContactForm = (props) => {
   }
 
   //const [status, setStatus] = useState("Submit");
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    //setStatus("Sending...");
-    setState({ messageSent: true });
-    const { name, email, message } = e.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    let response = await fetch("http://localhost:1234/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
-    //setStatus("Submit");
-    await response.json();
-  };
-  //onSubmit={handleSubmit}
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   //setStatus("Sending...");
+  //   setState({ messageSent: true });
+  //   const { name, email, message } = e.target.elements;
+  //   let details = {
+  //     name: name.value,
+  //     email: email.value,
+  //     message: message.value,
+  //   };
+  //   let response = await fetch("http://localhost:1234/contact", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json;charset=utf-8",
+  //     },
+  //     body: JSON.stringify(details),
+  //   });
+  //   //setStatus("Submit");
+  //   await response.json();
+  // };
+
+  // goes on form html onSubmit={handleSubmit}
   return (
     <form name="PortfolioContact" data-netlify="true">
       <div className="containInput">
