@@ -1,0 +1,28 @@
+.portolio_container {
+    display:grid;
+    grid-template-columns: repeat(3,33%);  /* 3 columns */
+    grid-gap:50px 30px;
+}
+
+.portfolio_video {
+    position: relative;
+    padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+  }
+  
+  .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .portfolio_title {text-align:center}
+  /* .circle video {border-radius: 50%;aspect-ratio: 1;} */
+  .fakeH2 {font-size:15px}
+  .portIntoText {margin-bottom:50px;}
+  .portfolioItemText {margin-top:20px;}
+  .underlineText {text-decoration:underline;cursor:pointer}
+
+  .backNavPort {display:flex;cursor:pointer}
+  .backText {margin-left:5px;}
+.smallTextPos {position:relative;font-size:9px;   top: -20px;
+  left: 100px}
+  .mtop0 {margin-top:0px;} 

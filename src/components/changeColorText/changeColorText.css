@@ -1,0 +1,48 @@
+.react-colorful__alpha {display:none}
+.fontSelect option {    
+    line-height: 1.6rem !important;
+    height: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+.fontSelect:focus-visible {
+    outline:0px !important
+}
+.qFont {font-family: 'Questrial';}
+.cnFont {font-family: 'Comic Neue';}
+.jFont {font-family: 'Josefin Sans';}
+.mFont {font-family: 'Montserrat';}
+.fontSelect {
+    width:226px;
+    box-shadow: -6px 5px 12px 0px rgb(0 0 0 / 25%);
+    -webkit-box-shadow: -6px 5px 12px 0px rgb(0 0 0 / 25%);
+    -moz-box-shadow: -6px 5px 12px 0px rgba(0,0,0,0.25);
+    border:none;
+    transition: all 1.5s ease-in-out;
+}
+.circle .fontSelect {
+    border-radius: 50%;
+    height: 102px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+}
+.circle .fontSelect option {
+    justify-content: center;
+}
+.circle .chrome-picker {
+    border-radius: 50% !important;
+    transition: all 1.5s ease-in-out;
+}
+.circle .chrome-picker > div:first-child {
+    border-radius: 50% !important;
+    width: 130px !important;
+    margin-left:0px !important;
+}
+.circle .chrome-picker > div {
+width: 160px;
+margin-left: auto;
+margin-right: auto;
+transition: all 1.5s ease-in-out;
+}

@@ -1,0 +1,18 @@
+.header__socials {
+    display: inline-block;
+    text-decoration: underline;
+    color:#333;
+    
+}
+.formLabel {width:100px}
+.containInput {width:300px;margin-bottom:10px;}
+form {width:300px}
+.formTextArea {height:100px;resize: none;}
+.hideButAsDiv {background:none;border:none;}
+.textUnderline {text-decoration: underline;}
+.hideButAsDiv svg {margin-left: 10px;
+    position: relative;
+    top: 5px;
+    font-size: 24px;
+}
+.hideButAsDiv h2 {display:inline}
