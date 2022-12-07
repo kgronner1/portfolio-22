@@ -182,15 +182,14 @@ section {
     display:none;
 }
 #root, .allContain {width:100%}
+
 /* mobile css */
 @media (max-width: 600px) {
     html {min-width:600px;}
     .shape { top :30px;}
     .shape div  {max-width:96vw}
     .inkycircle, .inkysquare, .shape {width:136vw}
-}
-
-@media (max-width: 600px) {
+    .smallText {display:none}
     .startControls {display:none}
 }
 @media (max-height: 650px) {
