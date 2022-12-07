@@ -69,15 +69,15 @@ const ContactForm = (props) => {
     <form name="PortfolioContact" onSubmit={handleSubmit} data-netlify="true">
       <div className="containInput">
         <div className="formLabel" htmlFor="name">Name:</div>
-        <input style={formStyle} type="text" id="name" required maxLength="100" />
+        <input style={formStyle} name="Name" type="text" id="name" required maxLength="100" />
       </div>
       <div className="containInput">
         <div className="formLabel" htmlFor="email">Email:</div>
-        <input style={formStyle} type="email" id="email" required maxLength="100" />
+        <input style={formStyle} name="Email" type="email" id="email" required maxLength="100" />
       </div>
       <div className="containInput">
         <div className="formLabel" htmlFor="message">Message:</div>
-        <textarea style={formStyle} className="formTextArea" id="message" required maxLength="600" />
+        <textarea style={formStyle} name="Message" className="formTextArea" id="message" required maxLength="600" />
       </div>
       <button type="submit" className="hideButAsDiv"><h2 className={state.messageSent === true ? "" : "textUnderline"}>{state.messageSent === true ? "Message received, thanks!" : "Submit"}</h2><span style={hideBut}>{shapeCircle ? circleNav() : sqaureNav()}</span></button>
     </form>
