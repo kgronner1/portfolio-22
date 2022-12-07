@@ -26,6 +26,7 @@ const ContactForm = (props) => {
     display: state.messageSent === true ? "none" : "inline"
   }
 
+  // local node handleSubmit
   //const [status, setStatus] = useState("Submit");
   // const handleSubmit = async (e) => {
   //   e.preventDefault();
@@ -48,9 +49,24 @@ const ContactForm = (props) => {
   //   await response.json();
   // };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+    
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => setState({ messageSent: true }))
+      .catch((error) => alert(error));
+  };
+
   // goes on form html onSubmit={handleSubmit}
   return (
-    <form name="PortfolioContact" data-netlify="true">
+    <form name="PortfolioContact" onSubmit={handleSubmit} data-netlify="true">
       <div className="containInput">
         <div className="formLabel" htmlFor="name">Name:</div>
         <input style={formStyle} type="text" id="name" required maxLength="100" />
@@ -63,7 +79,7 @@ const ContactForm = (props) => {
         <div className="formLabel" htmlFor="message">Message:</div>
         <textarea style={formStyle} className="formTextArea" id="message" required maxLength="600" />
       </div>
-      <button type="submit" onClick={() => setState({ messageSent: true })} className="hideButAsDiv"><h2 className={state.messageSent === true ? "" : "textUnderline"}>{state.messageSent === true ? "Message received, thanks!" : "Submit"}</h2><span style={hideBut}>{shapeCircle ? circleNav() : sqaureNav()}</span></button>
+      <button type="submit" className="hideButAsDiv"><h2 className={state.messageSent === true ? "" : "textUnderline"}>{state.messageSent === true ? "Message received, thanks!" : "Submit"}</h2><span style={hideBut}>{shapeCircle ? circleNav() : sqaureNav()}</span></button>
     </form>
   );
 };
