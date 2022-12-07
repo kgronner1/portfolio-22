@@ -54,7 +54,7 @@ const ContactForm = (props) => {
   
     const myForm = event.target;
     const formData = new FormData(myForm);
-    
+    console.log(formData);
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -66,7 +66,7 @@ const ContactForm = (props) => {
 
   // goes on form html onSubmit={handleSubmit}
   return (
-    <form name="PortfolioContact" onSubmit={handleSubmit} data-netlify="true">
+    <form name="PortfolioContact" onSubmit={handleSubmit} netlify>
       <div className="containInput">
         <div className="formLabel" htmlFor="name">Name:</div>
         <input style={formStyle} name="Name" type="text" id="name" required maxLength="100" />
