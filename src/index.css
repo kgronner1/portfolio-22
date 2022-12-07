@@ -81,16 +81,17 @@ section {
 .allContain {
     display:flex;
     flex-direction: column;
+    width:100%
 }
 .shapeContain {
     height: calc(100vh - 15vh);
-    width: 100vw;
+    width: 100%;
     position:relative;
 }
 .navContain {
     display: flex;
     height:15vh;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -180,9 +181,10 @@ section {
   .Typewriter__cursor {
     display:none;
 }
-
+#root, .allContain {width:100%}
 /* mobile css */
 @media (max-width: 600px) {
+    html {min-width:600px;}
     .shape div  {max-width:96vw}
     .inkycircle, .inkysquare, .shape {width:136vw}
 }
