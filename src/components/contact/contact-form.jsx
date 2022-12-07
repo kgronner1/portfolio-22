@@ -51,7 +51,6 @@ const ContactForm = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-  
     const myForm = event.target;
     const formData = new FormData(myForm);
     console.log(formData);
@@ -66,7 +65,8 @@ const ContactForm = (props) => {
 
   // goes on form html onSubmit={handleSubmit}
   return (
-    <form name="PortfolioContact" onSubmit={handleSubmit} netlify>
+    <form name="PortfolioContact" onSubmit={handleSubmit} id="contactForm" netlify>
+      <input type="hidden" name="form-name" value="PortfolioContact" />
       <div className="containInput">
         <div className="formLabel" htmlFor="name">Name:</div>
         <input style={formStyle} name="Name" type="text" id="name" required maxLength="100" />
