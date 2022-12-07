@@ -50,7 +50,7 @@ const ContactForm = (props) => {
 
   // goes on form html onSubmit={handleSubmit}
   return (
-    <form name="PortfolioContact" data-netlify="true">
+    <form name="PortfolioContact" onSubmit={setState({ messageSent: true })} data-netlify="true">
       <div className="containInput">
         <div className="formLabel" htmlFor="name">Name:</div>
         <input style={formStyle} type="text" id="name" required maxLength="100" />
