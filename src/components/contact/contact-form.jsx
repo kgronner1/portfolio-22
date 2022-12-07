@@ -47,8 +47,9 @@ const ContactForm = (props) => {
     //setStatus("Submit");
     await response.json();
   };
+  //onSubmit={handleSubmit}
   return (
-    <form onSubmit={handleSubmit} >
+    <form name="PortfolioContact" data-netlify="true">
       <div className="containInput">
         <div className="formLabel" htmlFor="name">Name:</div>
         <input style={formStyle} type="text" id="name" required maxLength="100" />
