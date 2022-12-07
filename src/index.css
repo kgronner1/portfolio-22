@@ -125,10 +125,10 @@ section {
     border-radius: 50%;
 }
 .inkycircle {
-    background:url("./assets/ink-circle.png");
+    background:url("./assets/ink-cr-10.png");
     aspect-ratio: 1 / 1;
     background-size: cover;
-    opacity: 0.2;
+    opacity: 1;
     z-index:-1;
     position:absolute;
     margin: auto;
@@ -140,10 +140,10 @@ section {
     animation: fadeIn 1s;
 }
 .inkysquare {
-    background:url("./assets/ink-square.png");
+    background:url("./assets/ink-sq-10.png");
     aspect-ratio: 1 / 1;
     background-size: cover;
-    opacity: 0.2;
+    opacity: 1;
     z-index:-1;
     margin: auto;
     left: 0;
@@ -190,6 +190,9 @@ section {
     .inkycircle, .inkysquare, .shape {width:136vw}
 }
 
-@media (max-width: 600px) or (max-height: 650px){
+@media (max-width: 600px) {
+    .startControls {display:none}
+}
+@media (max-height: 650px) {
     .startControls {display:none}
 }
