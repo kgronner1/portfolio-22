@@ -160,7 +160,7 @@ export default class App extends React.Component {
                   <div className='flex-center'>
                     <ChangeShape shape={shape} onCheckChange={this.handleShapeChange}/>
                   </div>
-                  <div className='flex-center'>
+                  <div className='flex-center startControls'>
                     <ChangeColorText shape={shape} onColorChange={this.handleColorChange}/>
                   </div>
                 

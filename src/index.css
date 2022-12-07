@@ -165,3 +165,13 @@ section {
   .Typewriter__cursor {
     display:none;
 }
+
+/* mobile css */
+@media (max-width: 600px) {
+    .shape div  {max-width:96vw}
+    .inkycircle, .inkysquare, .shape {width:136vw}
+}
+
+@media (max-width: 600px) or (max-height: 650px){
+    .startControls {display:none}
+}
