@@ -231,7 +231,7 @@ section {
     .shape div  {max-width:96vw}
     .inkycircle, .inkysquare, .shape {width:100%;}
     .inkycircle, .inkysquare {display:none}
-    .smallText {display:none}
+/*    .smallText {display:none}*/
     .startControls {display:none}
     .allContain {padding:5px;}
     .container {padding:50px 0px;}
