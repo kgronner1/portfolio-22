@@ -18,7 +18,7 @@ const ContactForm = (props) => {
     return (<BsFillArrowRightCircleFill/>)
   }
   const formStyle = {
-    width:"300px",
+    width:"100%",
     background: "none",
     border:props.fontColor === "" ? "2px solid #333" : "2px solid #fff"
   }

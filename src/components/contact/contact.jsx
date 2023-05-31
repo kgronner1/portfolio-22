@@ -5,15 +5,15 @@ import ContactForm from './contact-form.jsx'
 
 const Contact = (props) => {
   return (
-    <div>
+    <div className="container">
       <div className="portIntroText">
-      <h1>Contact</h1>
-      <h2>
-          Send me a message or find me on&nbsp;<AltContact/>.
-      </h2>
-    </div>
-    
-    <ContactForm shape={props.shape} fontColor={props.fontColor}/>
+        <h1>Contact</h1>
+        <h2>
+            Send me a message or find me on&nbsp;<AltContact/>.
+        </h2>
+      </div>
+      
+      <ContactForm shape={props.shape} fontColor={props.fontColor}/>
     </div>
   )
 }

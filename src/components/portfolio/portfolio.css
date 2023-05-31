@@ -17,13 +17,18 @@
   }
   .portfolio_title {text-align:center}
   /* .circle video {border-radius: 50%;aspect-ratio: 1;} */
-  .fakeH2 {font-size:15px}
   .portIntoText {margin-bottom:50px;}
-  .portfolioItemText {margin-top:20px;}
   .underlineText {text-decoration:underline;cursor:pointer}
-
+  .navigation svg {font-size: 1.5rem;}
   .backNavPort {display:flex;cursor:pointer}
   .backText {margin-left:5px;}
-.smallTextPos {position:relative;font-size:9px;   top: -20px;
+.smallTextPos {position:relative;font-size:1.2rem;   top: -20px;
   left: 100px}
   .mtop0 {margin-top:0px;} 
+  .portfolioItemText {margin-top:3rem;}
+@media (max-width: 1200px) {
+  .portfolioItemText {margin-top:1.7rem;}
+}
+@media (max-width: 600px) {
+.smallTextPos {left:0px;}
+ }

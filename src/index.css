@@ -44,26 +44,67 @@ body {
     margin:0 auto;
 }
 
-h1, h2, h3, h4, h5 {
+h2, h3, h4, h5 {
     font-weight:400;
     transition: all 1s;
     line-height: 1.4rem;
 }
 
+h2 {
+    font-size:1.5rem;
+}
+
 p {
     transition: all 1s;
-    line-height: 1rem;
-    font-size:0.75rem;
+    line-height: 1.5rem;
+    font-size:1.5rem;
+}
+
+span {
+    font-size:1.5rem;
 }
 
 button {color:#333}
 
 h1 {
-    font-size:2.5rem;
+    font-size:4.5rem;
+    font-weight:400;
+    transition: all 1s;
+    line-height: 4.4rem;
 }
 
 section {
     margin-top:8rem;
+}
+@media (max-width: 1200px) {
+        h2, h3, h4, h5 {
+        font-weight:400;
+        transition: all 1s;
+        line-height: 1.2rem;
+    }
+
+    h2 {
+        font-size:1.3rem;
+    }
+
+    p {
+        transition: all 1s;
+        line-height: 1rem;
+        font-size:1rem;
+    }
+
+    span {
+        font-size:1rem;
+    }
+
+    button {color:#333}
+
+    h1 {
+        font-size:2.1rem;
+        font-weight:400;
+        transition: all 1s;
+        line-height: 2rem;
+    }
 }
 
 .flex-center {
@@ -182,15 +223,19 @@ section {
     display:none;
 }
 #root, .allContain {width:100%}
-
+.allContain {padding:10px;}
 /* mobile css */
 @media (max-width: 600px) {
-    html {min-width:600px;}
-    .shape { top :30px;}
+    html {min-width:100%;}
+    .shape { top :30px;padding:20px;}
     .shape div  {max-width:96vw}
-    .inkycircle, .inkysquare, .shape {width:136vw}
+    .inkycircle, .inkysquare, .shape {width:100%;}
+    .inkycircle, .inkysquare {display:none}
     .smallText {display:none}
     .startControls {display:none}
+    .allContain {padding:5px;}
+    .container {padding:50px 0px;}
+    
 }
 @media (max-height: 650px) {
     .startControls {display:none}

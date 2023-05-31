@@ -5,8 +5,8 @@
     
 }
 .formLabel {width:100px}
-.containInput {width:300px;margin-bottom:10px;}
-form {width:300px}
+.containInput {width:100%;margin-bottom:10px;}
+form {width:100%}
 .formTextArea {height:100px;resize: none;}
 .hideButAsDiv {background:none;border:none;}
 .textUnderline {text-decoration: underline;}
@@ -16,3 +16,10 @@ form {width:300px}
     font-size: 24px;
 }
 .hideButAsDiv h2 {display:inline}
+.containInput div {font-size:1.5rem}
+.containInput input {
+    font-size:1.5rem;
+width: 100%;
+background: none;
+border: 2px solid rgb(255, 255, 255);
+height: 40px;}
