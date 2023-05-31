@@ -76,7 +76,7 @@ h1 {
 section {
     margin-top:8rem;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1200px) or (max-height:1100px) {
         h2, h3, h4, h5 {
         font-weight:400;
         transition: all 1s;
