@@ -227,7 +227,7 @@ section {
 /* mobile css */
 @media (max-width: 600px) {
     html {min-width:100%;}
-    .shape { top :30px;padding:20px;}
+    .shape { top :-20px;padding:20px;}
     .shape div  {max-width:96vw}
     .inkycircle, .inkysquare, .shape {width:100%;}
     .inkycircle, .inkysquare {display:none}
