@@ -37,11 +37,15 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll, { passive: true })
+    if (window.innerWidth > 600) {
+      window.addEventListener('scroll', this.handleScroll, { passive: true })
+    }
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll)
+    if (window.innerWidth > 600) {
+      window.removeEventListener('scroll', this.handleScroll)
+    }
   }
 
 

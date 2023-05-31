@@ -31,4 +31,6 @@
 }
 @media (max-width: 600px) {
 .smallTextPos {left:0px;}
+.container .portfolioItemText:last-child {display:none}
  }
+}
