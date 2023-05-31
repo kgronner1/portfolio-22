@@ -226,14 +226,14 @@ section {
 .allContain {padding:10px;}
 /* mobile css */
 @media (max-width: 600px) {
-    html {min-width:100%;}
+    html {min-width:100%;overflow: hidden}
     .shape { top :-20px;padding:20px;}
     .shape div  {max-width:96vw}
     .inkycircle, .inkysquare, .shape {width:100%;}
     .inkycircle, .inkysquare {display:none}
 /*    .smallText {display:none}*/
     .startControls {display:none}
-    .allContain {padding:5px;}
+    .allContain {padding:5px;overflow: hidden}
     .container {padding:50px 0px;}
     
 }
